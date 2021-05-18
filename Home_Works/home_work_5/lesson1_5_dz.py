@@ -18,8 +18,8 @@ if auth.status_code == 200:
             }
             params = {
                 'text': word,
-                'srcLang': 1033,
-                'dstLang': 1049
+                'srcLang': 1049,
+                'dstLang': 1036
             }
             r = requests.get(URL_TRANSLATE, headers=headers_translate, params=params)
             res = r.json()
